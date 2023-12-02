@@ -1,6 +1,10 @@
 'use script';
 const sortByDescendingFriendCount = users => {
-  const descendingFriendCount = users.toSorted();
+  const descendingFriendCount = users.toSorted(
+    (firstName, secondName) =>
+      secondName.friends.length - firstName.friends.length
+  );
+
   return descendingFriendCount;
 };
 
