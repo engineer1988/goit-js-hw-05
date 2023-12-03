@@ -1,4 +1,4 @@
-'use script';
+'use strict';
 const sortByDescendingFriendCount = users => {
   const descendingFriendCount = users.toSorted(
     (firstName, secondName) =>
